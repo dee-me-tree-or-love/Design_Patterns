@@ -1,9 +1,0 @@
-D:\Media\Books\EDUCATION\FONTYS\Y2\DPR\StrategyPattern\StrategyPattern\bin\Debug\StrategyPattern.exe.config
-D:\Media\Books\EDUCATION\FONTYS\Y2\DPR\StrategyPattern\StrategyPattern\bin\Debug\StrategyPattern.exe
-D:\Media\Books\EDUCATION\FONTYS\Y2\DPR\StrategyPattern\StrategyPattern\bin\Debug\StrategyPattern.pdb
-D:\Media\Books\EDUCATION\FONTYS\Y2\DPR\StrategyPattern\StrategyPattern\obj\Debug\StrategyPattern.csprojResolveAssemblyReference.cache
-D:\Media\Books\EDUCATION\FONTYS\Y2\DPR\StrategyPattern\StrategyPattern\obj\Debug\StrategyPattern.Properties.Resources.resources
-D:\Media\Books\EDUCATION\FONTYS\Y2\DPR\StrategyPattern\StrategyPattern\obj\Debug\StrategyPattern.csproj.GenerateResource.Cache
-D:\Media\Books\EDUCATION\FONTYS\Y2\DPR\StrategyPattern\StrategyPattern\obj\Debug\StrategyPattern.exe
-D:\Media\Books\EDUCATION\FONTYS\Y2\DPR\StrategyPattern\StrategyPattern\obj\Debug\StrategyPattern.pdb
-D:\Media\Books\EDUCATION\FONTYS\Y2\DPR\StrategyPattern\StrategyPattern\obj\Debug\StrategyPattern.Form1.resources
