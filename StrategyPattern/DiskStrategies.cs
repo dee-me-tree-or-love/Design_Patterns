@@ -10,7 +10,7 @@ namespace StrategyPattern
     {
         public int FindIndex(List<int> tasks, int currentTask)
         {
-            if (tasks.Count == 1)
+            if (tasks.Count == 1 || tasks[0]!= currentTask) // if not the current task -return first, depended on the implementation
             {
                 return 0;
             }

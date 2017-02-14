@@ -29,8 +29,9 @@ namespace UnitTest
             // processing the first task schedule
             _nextNumberIndex = _FCFSStrat.FindIndex(_tasks, _currentTask);
             Assert.AreEqual(1, _nextNumberIndex);
-            _tasks.Remove(_currentTask);
+            int _cleanPending = _currentTask; // temporary placeholder
             _currentTask = _tasks[_nextNumberIndex];
+            _tasks.Remove(_cleanPending);
             // first iteration done
             for (int i = 0; i < _tasks.Count; i++)
             {
@@ -121,6 +122,40 @@ namespace UnitTest
             // fourth iteration done
 
             this.LogList(_tasks);
+        }
+
+        [TestMethod]
+        public void TestChangingStrat()
+        {
+            StrategyPattern.DiskDrive _DD = new DiskDrive();
+            List<int> _tasks = new List<int>()
+                {   100, 3, 55, 23,
+                    53, 12, 54, 22,
+                    9, 85, 2, 10,
+                    143, 15, 20, 77 };
+            _DD.SetTasks(_tasks);
+            _DD.OnTimedAction(); // should be done, and the current task should be 3.
+            Assert.AreEqual(3, _DD.GetCurrentTask());
+
+            // change to SCAN
+            SCANDiskStrategy _SDS = new SCANDiskStrategy();
+            _DD.SetStrategy(_SDS);
+            _DD.OnTimedAction(); // the current task should be 2
+            Assert.AreEqual(2, _DD.GetCurrentTask());
+
+            // change to SSTF
+            SSTFDiskStrategy _SSTF = new SSTFDiskStrategy();
+            _DD.SetStrategy(_SSTF);
+            _DD.OnTimedAction(); // the current task should be 9
+            Assert.AreEqual(9, _DD.GetCurrentTask());
+
+            // change to FCFS
+            FCFSDiskStrategy _FCFS = new FCFSDiskStrategy();
+            _DD.SetStrategy(_FCFS);
+            _DD.OnTimedAction(); // the current task should be 9
+            Assert.AreEqual(55, _DD.GetCurrentTask());
+
+
         }
 
         private void LogList(IList<int> li)

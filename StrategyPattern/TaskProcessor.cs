@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace StrategyPattern
 {
+    /// <summary>
+    /// Not really a useful class, but just in case you need it - it's there
+    /// </summary>
     public static class TaskProcessor
     {
         public static void Process(object task)

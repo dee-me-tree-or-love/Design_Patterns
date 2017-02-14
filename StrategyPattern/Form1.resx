@@ -128,10 +128,15 @@
 
 &gt; pressing 'Stop' will stop the disk process
 
+&gt; pressing 'One Step &gt;' makes one disc head change
+
 &gt; Choosing one of the radio buttons changes the strategy
 
 &gt; the trackbar imitates the current postion of the disk head over the current task
 
 ## Thanks for using!</value>
   </data>
+  <metadata name="tmrDiskProcessing.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
+    <value>17, 17</value>
+  </metadata>
 </root>
