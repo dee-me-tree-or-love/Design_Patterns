@@ -1,0 +1,8 @@
+D:\Media\Books\EDUCATION\FONTYS\Y2\DPR\StrategyPattern\UnitTest\bin\Debug\UnitTest.dll
+D:\Media\Books\EDUCATION\FONTYS\Y2\DPR\StrategyPattern\UnitTest\bin\Debug\UnitTest.pdb
+D:\Media\Books\EDUCATION\FONTYS\Y2\DPR\StrategyPattern\UnitTest\bin\Debug\Microsoft.VisualStudio.QualityTools.UnitTestFramework.dll
+D:\Media\Books\EDUCATION\FONTYS\Y2\DPR\StrategyPattern\UnitTest\bin\Debug\StrategyPattern.exe
+D:\Media\Books\EDUCATION\FONTYS\Y2\DPR\StrategyPattern\UnitTest\bin\Debug\StrategyPattern.pdb
+D:\Media\Books\EDUCATION\FONTYS\Y2\DPR\StrategyPattern\UnitTest\obj\Debug\UnitTest.csprojResolveAssemblyReference.cache
+D:\Media\Books\EDUCATION\FONTYS\Y2\DPR\StrategyPattern\UnitTest\obj\Debug\UnitTest.dll
+D:\Media\Books\EDUCATION\FONTYS\Y2\DPR\StrategyPattern\UnitTest\obj\Debug\UnitTest.pdb
