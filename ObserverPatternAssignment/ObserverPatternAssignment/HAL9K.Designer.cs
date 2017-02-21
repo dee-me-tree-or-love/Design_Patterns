@@ -29,12 +29,12 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.lbReadings = new System.Windows.Forms.ListBox();
-            this.btnStartObserving = new System.Windows.Forms.Button();
-            this.btnStopObserving = new System.Windows.Forms.Button();
-            this.tbHalsWords = new System.Windows.Forms.TextBox();
             this.btnKillHal = new System.Windows.Forms.Button();
+            this.tbHalsWords = new System.Windows.Forms.TextBox();
+            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnStopObserving = new System.Windows.Forms.Button();
+            this.btnStartObserving = new System.Windows.Forms.Button();
+            this.lbReadings = new System.Windows.Forms.ListBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -50,6 +50,29 @@
             this.panel1.Size = new System.Drawing.Size(284, 30);
             this.panel1.TabIndex = 0;
             // 
+            // btnKillHal
+            // 
+            this.btnKillHal.Dock = System.Windows.Forms.DockStyle.Right;
+            this.btnKillHal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnKillHal.Location = new System.Drawing.Point(229, 0);
+            this.btnKillHal.Name = "btnKillHal";
+            this.btnKillHal.Size = new System.Drawing.Size(55, 30);
+            this.btnKillHal.TabIndex = 1;
+            this.btnKillHal.Text = "kill";
+            this.btnKillHal.UseVisualStyleBackColor = true;
+            this.btnKillHal.Click += new System.EventHandler(this.btnKillHal_Click);
+            // 
+            // tbHalsWords
+            // 
+            this.tbHalsWords.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.tbHalsWords.Dock = System.Windows.Forms.DockStyle.Left;
+            this.tbHalsWords.Location = new System.Drawing.Point(0, 0);
+            this.tbHalsWords.Multiline = true;
+            this.tbHalsWords.Name = "tbHalsWords";
+            this.tbHalsWords.ReadOnly = true;
+            this.tbHalsWords.Size = new System.Drawing.Size(194, 30);
+            this.tbHalsWords.TabIndex = 0;
+            // 
             // panel3
             // 
             this.panel3.Controls.Add(this.btnStopObserving);
@@ -59,27 +82,6 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(284, 30);
             this.panel3.TabIndex = 2;
-            // 
-            // lbReadings
-            // 
-            this.lbReadings.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.lbReadings.FormattingEnabled = true;
-            this.lbReadings.HorizontalScrollbar = true;
-            this.lbReadings.Location = new System.Drawing.Point(0, 277);
-            this.lbReadings.Name = "lbReadings";
-            this.lbReadings.Size = new System.Drawing.Size(284, 108);
-            this.lbReadings.TabIndex = 3;
-            // 
-            // btnStartObserving
-            // 
-            this.btnStartObserving.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnStartObserving.Location = new System.Drawing.Point(3, 3);
-            this.btnStartObserving.Name = "btnStartObserving";
-            this.btnStartObserving.Size = new System.Drawing.Size(100, 23);
-            this.btnStartObserving.TabIndex = 0;
-            this.btnStartObserving.Text = "Observe";
-            this.btnStartObserving.UseVisualStyleBackColor = true;
-            this.btnStartObserving.Click += new System.EventHandler(this.btnStartObserving_Click);
             // 
             // btnStopObserving
             // 
@@ -92,27 +94,26 @@
             this.btnStopObserving.UseVisualStyleBackColor = true;
             this.btnStopObserving.Click += new System.EventHandler(this.btnStopObserving_Click);
             // 
-            // tbHalsWords
+            // btnStartObserving
             // 
-            this.tbHalsWords.Dock = System.Windows.Forms.DockStyle.Left;
-            this.tbHalsWords.Location = new System.Drawing.Point(0, 0);
-            this.tbHalsWords.Multiline = true;
-            this.tbHalsWords.Name = "tbHalsWords";
-            this.tbHalsWords.ReadOnly = true;
-            this.tbHalsWords.Size = new System.Drawing.Size(194, 30);
-            this.tbHalsWords.TabIndex = 0;
+            this.btnStartObserving.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnStartObserving.Location = new System.Drawing.Point(3, 3);
+            this.btnStartObserving.Name = "btnStartObserving";
+            this.btnStartObserving.Size = new System.Drawing.Size(100, 23);
+            this.btnStartObserving.TabIndex = 0;
+            this.btnStartObserving.Text = "Observe";
+            this.btnStartObserving.UseVisualStyleBackColor = true;
+            this.btnStartObserving.Click += new System.EventHandler(this.btnStartObserving_Click);
             // 
-            // btnKillHal
+            // lbReadings
             // 
-            this.btnKillHal.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnKillHal.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnKillHal.Location = new System.Drawing.Point(229, 0);
-            this.btnKillHal.Name = "btnKillHal";
-            this.btnKillHal.Size = new System.Drawing.Size(55, 30);
-            this.btnKillHal.TabIndex = 1;
-            this.btnKillHal.Text = "kill";
-            this.btnKillHal.UseVisualStyleBackColor = true;
-            this.btnKillHal.Click += new System.EventHandler(this.btnKillHal_Click);
+            this.lbReadings.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.lbReadings.FormattingEnabled = true;
+            this.lbReadings.HorizontalScrollbar = true;
+            this.lbReadings.Location = new System.Drawing.Point(0, 277);
+            this.lbReadings.Name = "lbReadings";
+            this.lbReadings.Size = new System.Drawing.Size(284, 108);
+            this.lbReadings.TabIndex = 3;
             // 
             // panel2
             // 

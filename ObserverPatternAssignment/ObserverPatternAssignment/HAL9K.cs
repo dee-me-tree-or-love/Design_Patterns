@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ObserverPatternAssignment
@@ -36,7 +29,6 @@ namespace ObserverPatternAssignment
             }
             this.lbReadings.Items.Insert(0, "From: " + _subj.ToString());
             this.lbReadings.Items.Insert(0, ">>" + System.DateTime.Now.ToString() + ":");
-
         }
 
         /// <summary>

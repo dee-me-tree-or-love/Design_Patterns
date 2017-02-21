@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace ObserverPatternAssignment
@@ -40,9 +33,8 @@ namespace ObserverPatternAssignment
                 this.pbBSUG.Value = _fromSubj.GetGatheredSensorReadings().BloodSugar;
                 this.pbOX.Value = _fromSubj.GetGatheredSensorReadings().OxygenLevel;
                 this.pbTEMP.Value = Convert.ToInt32(_fromSubj.GetGatheredSensorReadings().Temperture);
-            }
-                
 
+            }
         }
 
         private void btnStopObserving_Click(object sender, EventArgs e)

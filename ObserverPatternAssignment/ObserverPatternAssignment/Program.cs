@@ -19,6 +19,7 @@ namespace ObserverPatternAssignment
             Form1 _formDave = new Form1();
             // observer 1
             HAL9K _formHal = new HAL9K(_formDave.GetSubject());
+            // observer 2
             PHA _formPHA = new PHA(_formDave.GetSubject());
             _formPHA.Show();
             _formHal.Show();
