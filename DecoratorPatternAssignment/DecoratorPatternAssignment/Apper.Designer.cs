@@ -41,6 +41,7 @@
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.rbWeb = new System.Windows.Forms.RadioButton();
             this.rbDesktop = new System.Windows.Forms.RadioButton();
+            this.rbEmbedded = new System.Windows.Forms.RadioButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -152,7 +153,7 @@
             // rbWeb
             // 
             this.rbWeb.AutoSize = true;
-            this.rbWeb.Location = new System.Drawing.Point(93, 55);
+            this.rbWeb.Location = new System.Drawing.Point(70, 55);
             this.rbWeb.Name = "rbWeb";
             this.rbWeb.Size = new System.Drawing.Size(48, 17);
             this.rbWeb.TabIndex = 11;
@@ -164,7 +165,7 @@
             // rbDesktop
             // 
             this.rbDesktop.AutoSize = true;
-            this.rbDesktop.Location = new System.Drawing.Point(168, 55);
+            this.rbDesktop.Location = new System.Drawing.Point(124, 55);
             this.rbDesktop.Name = "rbDesktop";
             this.rbDesktop.Size = new System.Drawing.Size(65, 17);
             this.rbDesktop.TabIndex = 12;
@@ -173,11 +174,24 @@
             this.rbDesktop.UseVisualStyleBackColor = true;
             this.rbDesktop.CheckedChanged += new System.EventHandler(this.rb_CheckedChanged);
             // 
+            // rbEmbedded
+            // 
+            this.rbEmbedded.AutoSize = true;
+            this.rbEmbedded.Location = new System.Drawing.Point(195, 55);
+            this.rbEmbedded.Name = "rbEmbedded";
+            this.rbEmbedded.Size = new System.Drawing.Size(76, 17);
+            this.rbEmbedded.TabIndex = 13;
+            this.rbEmbedded.TabStop = true;
+            this.rbEmbedded.Text = "Embedded";
+            this.rbEmbedded.UseVisualStyleBackColor = true;
+            this.rbEmbedded.CheckedChanged += new System.EventHandler(this.rb_CheckedChanged);
+            // 
             // Apper
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(333, 472);
+            this.Controls.Add(this.rbEmbedded);
             this.Controls.Add(this.rbDesktop);
             this.Controls.Add(this.rbWeb);
             this.Controls.Add(this.pictureBox1);
@@ -215,6 +229,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private System.Windows.Forms.RadioButton rbWeb;
         private System.Windows.Forms.RadioButton rbDesktop;
+        private System.Windows.Forms.RadioButton rbEmbedded;
     }
 }
 

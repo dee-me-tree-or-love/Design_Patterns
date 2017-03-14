@@ -28,7 +28,7 @@ namespace DecoratorPatternAssignment
         private void UpdateGUI()
         {
             this.tbGeneratedDesctiption.Text = this.getLastVersion().ToString();
-            this.tbComplexityScore.Text = this.getLastVersion().ToString();
+            this.tbComplexityScore.Text = this.getLastVersion().EvaluateSelf().ToString();
         }
 
         public Apper()
@@ -83,6 +83,10 @@ namespace DecoratorPatternAssignment
             if (this.rbWeb.Checked)
             {
                 this.baseApp.SetTechnology(new WebTechnology());
+            }
+            if (this.rbEmbedded.Checked)
+            {
+                this.baseApp.SetTechnology(new EmbeddedTechnology());
             }
             this.UpdateGUI();
         }

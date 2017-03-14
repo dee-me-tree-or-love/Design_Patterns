@@ -17,8 +17,6 @@ namespace DecoratorPatternAssignment
         {
             return this.theApplication.EvaluateSelf() + 3;
         }
-
-        
     }
 
     public class Strategy : DesignPatternDecorator
