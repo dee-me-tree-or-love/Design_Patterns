@@ -13,6 +13,7 @@ namespace VisitorPatternAssignment
 
         public override void VisitRoomD(RoomD dan)
         {
+            this.makeStep();
             this.impression = "Aha! Give up your weopons, filthy " + dan.getAttacker();
         }
 
@@ -29,6 +30,7 @@ namespace VisitorPatternAssignment
 
         public override void VisitRoomS(RoomS shr)
         {
+            this.makeStep();
             this.impression = "Aha! thank you the holy " + shr.getBlesser();
         }
     }
